@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol id="n1">
+        <li>Html</li>
+        <li>Java</li>
+    </ol>
+    <input type="text" id="a1">
+    <button onclick="abc()">Add</button>
+    <script>
+        function abc()
+        {
+        let n=document.createElement('li');
+        n.innerHTML=a1.value;
+        n1.append(n);
+        a1.value="";
+        setTimeout(()=>n.remove(),1000)
+    }
+        
+    </script>
+</body>
+</html>

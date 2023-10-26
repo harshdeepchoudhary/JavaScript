@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<style>
+  body{
+    background-color: aqua;
+  }
+.form{
+  background-color: brown;
+  text-align: center;
+}
+text{
+  text-align: center;
+}
+
+</style>
+
+<body>
+<div id="form"> 
+  <h2>Login Page</h2>
+  <form action="" onsubmit="return validate()">
+    <input type="text" placeholder="username" id="user"><br>
+    <p id="userError"></p>
+    <input type="password" placeholder="password" id="password"><br>
+    <p id="pswdError"></p>
+    <input type="submit">
+  </form>
+</div>
+
+
+
+
+
+
+  <script>
+    let username=document.getElementById('user');
+    let password=document.getElementById('password');
+    function validate()
+    {
+      if(username.value=="")
+      {
+        document.getElementById("userError").innerHTML="Empty user name";
+      }
+      else if(username.value.length<3)
+      {
+        document.getElementById("userError").innerHTML="Enter Username More than 3";
+      }
+      if(password.value=="")
+      {
+        document.getElementById("pswdError").innerHTML="Empty Password";
+      }
+
+    }
+
+  </script>
+ 
+
+</body>
+
+</html>

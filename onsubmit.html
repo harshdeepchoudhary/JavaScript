@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <form action="signup" onsubmit="return abc()">
+    <input type="text" id="a1">
+<input type="password" id="a2"></form>
+<script>
+    function abc()
+    {
+        let a=a1.value;
+        let b=a2.value;
+        if(a!=b)
+        {
+            alert("password does not match")
+            return false;
+        }
+        return true;
+    }
+</script>
+    
+</body>
+</html>

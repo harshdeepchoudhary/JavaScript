@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>The</li>
+        <li class="intro">These</li>
+    </ul>
+    <ul>
+        <li>Has</li>
+        <li>Passed</li>
+    </ul>
+    <script>
+
+        let s=document.querySelectorAll('ul>li:first-child');
+            for(let i of s)
+            {
+                alert(i.innerHTML);
+            }
+            
+    </script>
+
+</body>
+</html>

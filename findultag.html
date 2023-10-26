@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>The</li>
+        <li class="intro">These</li>
+    </ul>
+    <ul>
+        <li>Has</li>
+        <li>Passed</li>
+    </ul>
+    <ol>
+        <li>Has</li>
+        <li>Passed</li>
+
+    </ol>
+    <script>
+        let n1=0,n2=0,n3=0;
+
+        let v1=document.querySelectorAll('ul');
+        let v2=document.querySelectorAll('ol');
+        let v3=document.querySelectorAll('li');
+            for(let i of v1){n1++;}
+            for(let i of v2){n2++;}
+            for(let i of v3){n3++;}
+            alert("Total <ul>= "+n1);
+                alert("Total <ol>= "+n2);
+                    alert("Total <li>= "+n3);
+            
+    </script>
+
+</body>
+</html>
